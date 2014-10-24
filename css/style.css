@@ -1,0 +1,183 @@
+html, body {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#navigator {
+	width: 100%;
+	height: 100%;
+}
+
+/* NAVIGATION HEADER */
+.navbar {
+	background: white;
+	padding-bottom: 17px;
+}
+.navbar-header {
+	margin: 20px 20px 0;
+}
+.profile {
+	border-radius: 5px;
+	float: left;
+	width: 65px;
+	height: 65px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.profile img {
+	width: 100%;
+}
+.nav-left {
+	float: left;
+	list-style: none;
+	padding: 0;
+	margin-left: 12px;
+	margin-top: 22px;
+}
+.nav-left li {
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 18px;
+	padding-bottom: 3px;
+}
+.nav-left li a {
+	text-decoration: none;
+	color: inherit;
+}
+.nav-left li:hover, .active {
+	border-bottom: 1px solid #000;
+}
+.nav-left li.active {
+	cursor: default;
+}
+
+/* ISOTOPE */
+#wrap {
+	z-index: 2;
+	margin-top: 104px;
+	background: #F0F0F0;
+}
+.item { 
+	cursor: pointer;
+	width: 20%;
+}
+.item.w2 { width: 33.33%; }
+.item img {
+	display: block;
+	width: 100%;
+}
+.identity {
+	display: none;
+}
+
+/* ITEM HOVER */
+
+.itemHover {
+	display: none;
+	position: absolute;
+	top: 0;
+	color: #FFF;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.70);
+	height: 100%;
+	z-index: 5;
+}
+.hoverText {
+	color: white;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+}
+.type {
+	color: #B8B8B8;
+}
+
+/* EXPLANATIONS */
+#explanations {
+	background: #F0F0F0;
+	position: relative;
+	padding-top: 60px;
+	display: none;
+}
+.control {
+	position: absolute;
+	list-style: none;
+	right: 5%;
+	top: 20px;
+}
+.control li {
+	color: #ADADAD;
+	display: inline-block;
+	padding-right: 20px;
+}
+.control li:hover {
+	color: grey;
+	cursor: pointer;
+}
+.glyphicon {
+	font-size: 2em;
+	top: 0px;
+}
+.itemExplained {
+	display: none;
+}
+.descriptions {
+	margin-top: 20px;
+	padding-left: 120px;
+}
+.descriptions a {
+	background: #4C7C99;
+	display: inline-block;
+	color: #FFF;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 1.1em;
+	margin-top: 30px;
+}
+.descriptions a:hover {
+	text-decoration: none;
+	background: #396077;
+}
+.descriptions p {
+	font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", Georgia, serif;
+	font-size: 1.2em;
+}
+.itemExplained {
+	padding-bottom: 60px
+}
+#explanations img {
+	width: 430px;
+	margin: 10px 0 0 60px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 730px) and (max-width: 980px) { 
+	.item { width: 33.33%; }
+	.item.w2 { width: 50%; }
+	.navbar {padding-left: 15px;}
+}
+@media (max-width: 729px) {
+	.item { width: 50%; }
+	.item.w2 { width: 50%; }
+	.navbar {padding-left: 15px;}
+}
+
+/*@media (max-width: 640px) {
+	.item { width: 100%; }
+	.item.w2 { width: 100%; }
+	.navbar {padding-left: 15px;}
+}*/
+@media only screen and (max-device-width: 480px) {
+	.item { width: 50%; }
+	.item.w2 { width: 100%; }
+	.navbar {padding-left: 5px;}
+	.navbar-header {font-size: 2.5em;}
+	.profile {
+		width: 150px;
+		height: 150px;
+	}
+	.nav-left li {
+		display: block;
+	}
+}
+
