@@ -2,38 +2,79 @@
 <html lang="en">
 <head>
 	<title>Edoe Cohen</title>
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="icon" href="images/favicon.jpg" />
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src='js/jquery.zoom.min.js'></script>
 </head>
 
-	<body>
-		<h3>hello world! </h3>
-		I am learning to code via the Thinkful front end course.<br>
-		A big part of the curriculum is devoted to building projects.<br>
-		This is my Github collection with all the apps and stuff I've built as part of the course. Enjoy!</p>
+<body>
+<div id="navigator">
+	<header class="navbar navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="profile">
+					<img src="" />
+				</div>
+				<ul class="nav-left">
+					<li>Companies</li>
+					<li>Apps</li>
+					<li>Articles</li>
+					<li>Passions</li>
+					<li><a href="http://now.edoecohen.com/" target="_blank">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div id="wrap">
+		<div id="explanations">
+			<ul class="control">
+				<li class="prevExp"><span class="fa fa-angle-left fa-3x"></span></li>
+				<li class="closeExp"><span class="glyphicon glyphicon-th"></span></li>
+				<li class="nextExp"><span class="fa fa-angle-right fa-3x"></span></li>
+			</ul>				
+		</div>
 
-		<ul>
-			<li><a href="http://edoecohen.github.io/html_resume/resume.html" target="_blank">HTML Resume</a></li>
-			<li><a href="http://edoecohen.github.io/omanoot/" target="_blank">Small business site - Omanoot</a></li>
-			<li><a href="http://edoecohen.github.io/jquery-streetfighter/main.html" target="_blank">jQuery Street Fighter</a></li>
-			<li><a href="http://edoecohen.github.io/shopping-list/" target="_blank">Shopping List</a></li>
-			<li><a href="http://edoecohen.github.io/fizzbuzz/" target="_blank">FizzBuzz</a></li>
-			<li><a href="http://edoecohen.github.io/hot-or-cold/" target="_blank">Hot or Cold</a></li>
-			<li><a href="http://edoecohen.github.io/zionism-101/" target="_blank">Zionism 101 Quiz</a></li>
-		</ul>
-	</body>
-	<h3>Elsewhere Online</h3>
-		<ul>
-			<li><a href="http://now.edoecohen.com/">Waking Up Into Now</a></li>
-		</ul>
-	</p>
-	<h3>Articles</h3>
-		<ul>
-			<li><a href="http://www.roicommunity.org/blog/vision-over-visibility" target="_blank">Vision over Visibility</a></li>
-			<li><a href="http://ejewishphilanthropy.com/la-jerusalem-mashup/" target="_blank">LA Jerusalem Mashup</a></li>
-			<li><a href="http://www.roicommunity.org/blog/village-people" target="_blank">The Village People</a></li>
-			<li><a href="http://www.jpost.com/Opinion/Op-Ed-Contributors/The-case-against-a-mandatory-draft" target="_blank">The Case Against a Mandatory Draft</a></li>
-			<li><a href="http://www.jewishjournal.com/israel/article/where_is_home_us_or_israel_20060505/" target="_blank">Where is Home?</a></li>
-		</ul>
-	</p>
+		<div id="isotope-con"></div>
+	</div>
+	<div class="templates">
+		<div class="item">
+			<div class="itemHover">
+				<div class="hoverText">
+					<div class="title"></div>
+					<div class="type"></div>
+				</div>
+			</div>
+			<img class="itemImg" />
+			<div class="identity"></div>
+		</div>
+		
+		<div class="row itemExplained">
+			<div class="col-md-4 descriptions">
+				<h1>Israel Defense Forces</h1>
+				<p class="paragraph">
+					I spent six years as an infantry officer in the IDF. I led troops into battle and did a lot of cool things. I can't really talk about all of it since it is highly classified.
+				</p>
+				<a href="http://www.idf.il/english/" target="_blank" class="expLink">
+					I'm in the Army Now!
+				</a>
+			</div>
+			<div class="col-md-8">
+				<img src="images/IDF.jpg" class="expImg" />
+			</div>
+		</div>
+	
+	
+	</div>
 
-</html>
+</div>
+
+</body>

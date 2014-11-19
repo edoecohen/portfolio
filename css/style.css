@@ -59,13 +59,14 @@ html, body {
 .item { 
 	cursor: pointer;
 	width: 20%;
+	background: black;
 }
 .item.w2 { width: 33.33%; }
 .item img {
 	display: block;
 	width: 100%;
 }
-.identity {
+.identity, .hidden {
 	display: none;
 }
 
@@ -84,7 +85,7 @@ html, body {
 .hoverText {
 	color: white;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	text-align: center;
 	width: 100%;
 }
@@ -146,7 +147,7 @@ html, body {
 	padding-bottom: 60px
 }
 #explanations img {
-	width: 430px;
+	width: 550px;
 	margin: 10px 0 0 60px;
 }
 

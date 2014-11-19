@@ -39,11 +39,13 @@ $(document).ready( function() {
 
 	var expContainer = $('#explanations');
 
-	var container = $('#isotope-con').imagesLoaded( function() {
+	var container = $('#isotope-con');
+
+	/*.imagesLoaded( function() {
 		container.isotope({
 				itemSelector: '.item'
 			}).isotope('shuffle');
-	});
+	});*/
 
 	var iso = container.data('isotope');
 
@@ -129,16 +131,16 @@ $(document).ready( function() {
 			expContainer.append(expResult);
 			
 			// HOVER ON ITEM
-			$('.item').on('mouseenter', function () {
-				$(this).zoom({
-					duration: 500,
-					magnify: 0.7,
-					onZoomOut: function () {
-						$(this).parent().find('.itemHover').fadeOut();
-					}
-				});
-				$(this).find('.itemHover').fadeIn(500);
-			});
+			$('.item').zoom({
+				duration: 400,
+				magnify: 0.6,
+				onZoomIn: function () {
+					$(this).parent().find('.itemHover').fadeIn("400");
+				},
+				onZoomOut: function () {
+					$(this).parent().find('.itemHover').fadeOut();
+				}
+			});			
 
 			// CONTROLING & DISPLAYING EXPLANATION ITEMS
 			var clickedID;
@@ -164,7 +166,7 @@ $(document).ready( function() {
 				if ($('.nav-left li').hasClass('active')) {
 					var filterOn = function (filterName, x, y) {
 						if (filter == filterName) {
-							if (intID > x) { prevID = intID - 1; }
+							if (intID > x) { prevID = intID - 1;  }
 							else { prevID = y }
 						};
 					};
@@ -210,20 +212,13 @@ $(document).ready( function() {
 				$('.itemExplained').fadeOut();
 				$('#explanations').slideUp();
 			});
-
 		});
+
 		// RUN THE ISOTOPE SHUFFLE
 		container.imagesLoaded( function() {
 			container.isotope({
-				itemSelector: '.item'
+				itemSelector: '.item',
 			}).isotope('shuffle');
 		});
 	});
-
-	/* CONTROLS ON EXPLANATIONS */
-	
-
-	
-
-
 });
